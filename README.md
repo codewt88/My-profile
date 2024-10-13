@@ -20,9 +20,9 @@ This project is a personal profile website built using HTML, CSS, and JavaScript
 
 ## Author
 
-- **Your Name:** [Your GitHub Profile](https://github.com/yourusername)
+- **Your Name:** [Your GitHub Profile](https://github.com/codewt88)
 - **YouTube Channel:** [Your YouTube Channel](https://www.youtube.com/@CodeWT)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
