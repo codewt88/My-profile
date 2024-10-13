@@ -1,0 +1,167 @@
+/* CSS styles for the body element */
+body {
+    font-family: 'Roboto', sans-serif; /* Sets the font for the entire page */
+    line-height: 1.6; /* Sets line height for better readability */
+    background: linear-gradient(to bottom, #a8e063, #56ab2f); /* Creates a gradient background */
+    color: #333; /* Sets text color */
+    max-width: 800px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px; /* Adds padding inside the body */
+    transition: background-color 0.5s ease-in-out; /* Smooth transition for background color changes */
+}
+body:hover {
+    background-color: #cfe0f9; /* Changes background color on hover */
+}
+
+/* Styles for the profile section */
+.profile {
+    text-align: center; /* Centers text inside the profile section */
+    margin-bottom: 20px; /* Adds space below the profile section */
+    transform: scale(1); /* Sets the initial scale for hover effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+    background: #e3f2fd; /* Sets background color for profile */
+    padding: 20px; /* Adds padding inside the profile */
+    border-radius: 12px; /* Rounds the corners of the profile box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adds shadow effect for depth */
+}
+.profile:hover {
+    transform: scale(1.05); /* Scales up the profile on hover */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
+
+/* Styles for the profile image */
+.profile img {
+    width: 150px; /* Sets width of the profile image */
+    height: 150px; /* Sets height of the profile image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to the image */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow changes */
+}
+.profile img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow on image hover */
+}
+
+/* Styles for heading elements */
+h1, h2 {
+    color: #0056b3; /* Sets color for headings */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color changes */
+}
+h1:hover, h2:hover {
+    color: #ff6600; /* Changes color on hover */
+}
+
+/* Styles for sections of the page */
+.section {
+    background: #fff; /* Sets background color for sections */
+    padding: 25px; /* Adds padding inside sections */
+    margin-bottom: 25px; /* Adds space below each section */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    border-radius: 10px; /* Rounds the corners of the sections */
+    opacity: 0; /* Hides sections initially */
+    transform: translateY(20px); /* Moves sections down initially */
+    transition: all 0.6s ease; /* Smooth transition for all properties */
+}
+.section.visible {
+    opacity: 1; /* Makes sections visible when the class 'visible' is added */
+    transform: translateY(0); /* Resets the vertical position */
+}
+.section:hover {
+    background: #f9f9f9; /* Changes background color on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Increases shadow on hover */
+}
+
+/* Styles for unordered lists */
+ul {
+    list-style-type: disc; /* Sets bullet style for lists */
+    padding-left: 20px; /* Adds padding to the left of lists */
+    transition: padding-left 0.3s ease-in-out; /* Smooth transition for padding changes */
+}
+ul:hover {
+    padding-left: 25px; /* Increases left padding on hover */
+    color: #007bff; /* Changes text color on hover */
+}
+
+/* Styles for links */
+a {
+    color: #0056b3; /* Sets link color */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for color and decoration changes */
+}
+a:hover {
+    color: #ffffff; /* Changes link color on hover */
+    text-decoration: underline; /* Underlines links on hover */
+}
+
+/* Styles for paragraphs */
+p {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for transform changes */
+}
+p:hover {
+    transform: scale(1.03); /* Scales up paragraph on hover */
+}
+
+/* Styles for the skills section */
+.skills {
+    display: flex; /* Uses flexbox for layout */
+    flex-wrap: wrap; /* Allows wrapping of skill items */
+    justify-content: space-between; /* Distributes space evenly */
+    gap: 15px; /* Adds gap between skill items */
+    margin-bottom: 30px; /* Adds space below the skills section */
+    padding: 10px; /* Adds padding inside the skills section */
+    background: #f1f8e9; /* Sets background color for skills section */
+    border-radius: 10px; /* Rounds the corners of the skills box */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+/* Styles for individual skill items */
+.skill {
+    flex: 1 1 calc(33% - 10px); /* Sets flexible width for each skill item */
+    background: #fff; /* Sets background color for each skill item */
+    padding: 15px; /* Adds padding inside each skill item */
+    border-radius: 8px; /* Rounds the corners of skill items */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    text-align: center; /* Centers text inside skill items */
+    transition: transform 0.3s ease-in-out, background 0.3s; /* Smooth transition for scaling and background changes */
+}
+.skill:hover {
+    transform: scale(1.1); /* Scales up skill item on hover */
+    background: #e8f5e9; /* Changes background color on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Increases shadow on hover */
+}
+
+/* Styles for the contact button */
+.contact-button {
+    display: inline-block; /* Makes the button inline and allows margin */
+    margin-top: 20px; /* Adds space above the button */
+    padding: 15px 25px; /* Adds padding inside the button */
+    background-color: #0056b3; /* Sets button background color */
+    color: #fff; /* Sets button text color */
+    border: none; /* Removes border */
+    border-radius: 8px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s; /* Smooth transition for background color and shadow */
+    text-decoration: none; /* Removes underline from the button */
+}
+.contact-button:hover {
+    background-color: #ff6600; /* Changes background color on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
+
+/* Styles for testimonials */
+.testimonial {
+    background: #fff; /* Sets background color for testimonials */
+    padding: 20px; /* Adds padding inside testimonials */
+    margin-bottom: 25px; /* Adds space below each testimonial */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    border-radius: 10px; /* Rounds the corners of testimonials */
+    text-align: center; /* Centers text inside testimonials */
+    transition: transform 0.3s ease-in-out, background 0.3s; /* Smooth transition for scaling and background changes */
+}
+.testimonial:hover {
+    transform: scale(1.05); /* Scales up testimonial on hover */
+    background: #fff3e0; /* Changes background color on hover */
+}
+.testimonial p {
+    font-style: italic; /* Italicizes text in testimonials */
+}
